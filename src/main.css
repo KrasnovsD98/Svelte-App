@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filter-bar {
+    display: flex; /* Align filters in a row */
+    gap: 10px; /* Adjust as necessary for spacing between filters */
+    align-items: center; /* Center-align the filter elements */
+    justify-content: start; /* Align to the start of the flex container */
+    padding-bottom: 10px; /* Space between filters and table */
+  }
+  
+  .filter-dropdown {
+    flex-grow: 1; /* Allow dropdowns to grow and fill the space */
+    position: relative; /* Needed for z-index to take effect */
+    z-index: 20; /* Higher than table header z-index */
+  }
+  
+  /* Existing styles for your table */
+  .table-container {
+    overflow: auto;
+    max-height: 500px;
+  }
